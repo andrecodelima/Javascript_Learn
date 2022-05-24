@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+    
+    <style>
+        
+        body{
+            background-color: rgb(92, 50, 88);
+            margin:0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container{
+            margin: 0 auto;
+            border: 2px solid white;
+            /* display: flex; */
+            justify-content: center;
+            width: 600px;
+            height: 500px;
+            margin-top: 10px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 10px white;
+        }
+
+        .box-img{
+            margin: 0 auto;
+            border: 2px solid white;
+            display: block;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            height: 250px;
+            border-radius: 13px;
+            margin-top: 70px;
+        }
+        
+
+
+        h1{
+            color: rgb(56, 54, 54);
+            font-size: 25pt;
+            border: 2px solid white;
+            text-align: center;
+            background-color: white;
+            color: rgb(16, 16, 17);
+        }
+
+        #imagem{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+
+    </style>
+
+<script>
+
+    var dataAtual = new Date();
+    var horas = dataAtual.getHours();
+    var minutos = dataAtual.getMinutes();
+    var segundos = dataAtual.getSeconds();
+
+</script>
+
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <h1 id="title"></h1>
+        <div class="box-img">
+            <img src="" alt="" id="imagem">
+        </div>
+
+    </div>
+
+    <script src="./script.js">
+        window.onload = horario();
+    </script>
+</body>
+</html>
