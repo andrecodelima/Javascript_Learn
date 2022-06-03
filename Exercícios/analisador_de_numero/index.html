@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    
+    <style>
+        
+        body{
+            background-color: rgb(32, 155, 177);
+            margin:0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container{
+            margin: 0 auto;
+            border: 2px solid white;
+            /* display: flex; */
+            justify-content: center;
+            width: 600px;
+            height: 500px;
+            margin-top: 10px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 10px white;
+        }
+
+        .container2{
+            margin: 0 auto;
+            border: 2px solid white;
+            /* display: flex; */
+            justify-content: center;
+            width: 600px;
+            height: 300px;
+            margin-top: 10px;
+            border-radius: 4px;
+            box-shadow: 3px 3px 10px white;
+        }
+
+        .box{
+            margin: 0 auto;
+            border: 2px solid rgb(209, 97, 97);
+            display: block;
+            background-color: white;
+            display: lex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 70%;
+            border-radius: 13px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .box2{
+            border: 2px solid black;
+            background-color: white;
+            margin-top: 20px;
+            height: 70%;
+        }
+
+        .container .box2{
+            border: 2px solid black;
+            margin-top: 20px;
+            height: 70%;
+            background-color: white;
+            padding: 10px;
+        }
+
+        h1{
+            color: rgb(56, 54, 54);
+            font-size: 25pt;
+            border: 2px solid white;
+            text-align: center;
+            background-color: white;
+            color: rgb(16, 16, 17);
+        }
+
+        .btn_finalizar{
+            margin-top: 2%;
+            margin-right:50% ;
+        }
+
+        .txt_area{
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <h1 id="title">Analisador de Números</h1>
+        <div class="box">
+             Número (entre 1 e 100) <input type="number" name="" id="InputBtn">
+             <button onclick="adiciona()">Adicionar</button>
+
+             <div class="box2">
+                 <textarea class="txt_area" id="cx_numeros" cols="30" rows="10"></textarea>
+                 <button class="btn_finalizar" id="btn_finalizar" onclick="mostrar()">Finalizar</button>
+            </div>     
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box2" id="box2">
+
+        </div>
+    </div>
+
+    <script src="./script.js">
+         
+    </script>
+</body>
+</html>
